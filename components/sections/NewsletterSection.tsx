@@ -1,7 +1,7 @@
 export function NewsletterSection() {
   return (
     <section className="w-full bg-[#780000] py-10 lg:py-12">
-      <div className="mx-auto w-full max-w-[1472px] px-4">
+      <div className="container">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight">
             Let&apos;s Grow Together!

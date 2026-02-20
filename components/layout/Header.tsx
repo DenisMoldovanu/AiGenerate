@@ -24,7 +24,7 @@ export function Header() {
     <header className="relative w-full bg-white">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 h-1 w-[92px] bg-[#780000] rounded-b-[3px]" />
 
-      <div className="mx-auto w-full max-w-[1472px] px-4">
+      <div className="container">
         <nav className="flex items-center justify-between py-4">
           <Link href="/" className="shrink-0">
             <Image

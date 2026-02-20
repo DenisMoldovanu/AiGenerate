@@ -115,7 +115,7 @@ export function OurSolutionsSection() {
           </div>
         </div>
 
-        <div className="relative mt-10 lg:-mt-[150px] z-10">
+        <div className="relative mt-10 z-10">
           <div className="hidden lg:block relative w-full min-h-[400px]">
             {solutionCards.map((card, idx) => (
               <div

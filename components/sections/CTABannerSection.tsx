@@ -13,7 +13,7 @@ export function CTABannerSection() {
         />
       </div>
       <div className="absolute inset-0 bg-[#780000]/85" />
-      <div className="relative mx-auto w-full max-w-[1472px] px-4 py-16 lg:py-24 text-center">
+      <div className="container relative py-16 lg:py-24 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
           Scale Your Business
         </h2>
