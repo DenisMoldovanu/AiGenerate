@@ -22,6 +22,7 @@ export default {
       fontFamily: {
         sans: ["Manrope", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
+        "stack-notch": ["Stack Sans Notch", "sans-serif"],
       },
       fontSize: {
         "hero-desktop": ["62px", {
