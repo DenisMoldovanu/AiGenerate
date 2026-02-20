@@ -37,7 +37,7 @@ function SolutionCard({
 }) {
   return (
     <div
-      className={`bg-[rgba(120,0,0,0.05)] border border-white backdrop-blur-[50px] rounded-[20px] p-6 flex flex-col ${className}`}
+      className={`bg-brand-primary/5 border border-white backdrop-blur-[50px] rounded-card p-6 flex flex-col ${className}`}
     >
       <div className="flex flex-col items-end gap-[52px] w-full">
         <span className="font-stack-notch text-[56px] md:text-[72px] lg:text-[86px] font-bold leading-[1] text-right text-black/10">
@@ -96,7 +96,7 @@ export function OurSolutionsSection() {
             height={15}
             className="w-[9px] h-[15px]"
           />
-          <span className="text-base font-normal leading-6 text-[#780000]">
+          <span className="text-base font-normal leading-6 text-brand-primary">
             The Why
           </span>
         </div>

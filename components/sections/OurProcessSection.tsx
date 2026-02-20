@@ -46,7 +46,7 @@ export function OurProcessSection() {
                 height={16}
                 className="w-4 h-4"
               />
-              <span className="text-sm font-medium text-[#780000]">
+              <span className="text-sm font-medium text-brand-primary">
                 &gt; The How
               </span>
             </div>
@@ -75,18 +75,18 @@ export function OurProcessSection() {
           <div className="flex-1 lg:max-w-[520px]">
             <Link
               href="#"
-              className="inline-block border-b border-[#780000] pb-1 text-base font-medium text-black hover:text-[#780000] transition-colors mb-8"
+              className="inline-block border-b border-brand-primary pb-1 text-base font-medium text-black hover:text-brand-primary transition-colors mb-8"
             >
               Proven Growth Model
             </Link>
             <div className="relative pl-12">
-              <div className="absolute left-[11px] top-6 bottom-6 w-0 border-l-2 border-dashed border-[#780000]" />
+              <div className="absolute left-[11px] top-6 bottom-6 w-0 border-l-2 border-dashed border-brand-primary" />
               <div className="flex flex-col gap-8">
                 {processSteps.map((step) => (
                   <div key={step.title} className="relative flex gap-4">
-                    <div className="absolute left-0 w-3 h-3 rounded-full bg-[#780000] -translate-x-1/2 top-2.5 z-10" />
+                    <div className="absolute left-0 w-3 h-3 rounded-full bg-brand-primary -translate-x-1/2 top-2.5 z-10" />
                     <div className="flex-1 flex gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-[#f9f3f3] flex items-center justify-center shrink-0">
+                      <div className="w-12 h-12 rounded-lg bg-locations-bg flex items-center justify-center shrink-0">
                         <Image
                           src={step.icon}
                           alt=""

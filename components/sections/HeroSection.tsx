@@ -17,9 +17,9 @@ const avatarUrls = [
 
 export function HeroSection() {
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-r from-[#780000] to-[#410303]">
+    <section className="relative w-full overflow-hidden bg-gradient-to-r from-brand-primary to-brand-dark">
       {/* Subtle dark red gradient overlay */}
-      <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#780000] via-[#650000] to-[#410303] opacity-90" />
+      <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-brand-primary via-brand-gradient-mid to-brand-dark opacity-90" />
 
       <Container className="relative z-10">
         <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-16 py-12 lg:py-16">
@@ -90,7 +90,7 @@ export function HeroSection() {
                   {avatarUrls.map((url, i) => (
                     <div
                       key={i}
-                      className="w-9 h-9 rounded-full border-2 border-[#780000] bg-gray-300 overflow-hidden"
+                      className="w-9 h-9 rounded-full border-2 border-brand-primary bg-gray-300 overflow-hidden"
                     >
                       <Image
                         src={url}
@@ -120,7 +120,7 @@ export function HeroSection() {
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 href="#"
-                className="inline-flex items-center gap-2.5 bg-[#b21c0e] hover:bg-[#961709] rounded-2xl px-6 py-3 text-base font-medium text-white transition-colors"
+                className="inline-flex items-center gap-2.5 bg-brand-cta hover:bg-brand-cta-hover rounded-2xl px-6 py-3 text-base font-medium text-white transition-colors"
               >
                 <span>Start Your Growth Journey</span>
                 <Image
@@ -133,7 +133,7 @@ export function HeroSection() {
               </Link>
               <Link
                 href="#"
-                className="inline-flex items-center gap-2.5 border-2 border-[#b21c0e] bg-transparent rounded-2xl px-6 py-3 text-base font-medium text-white hover:bg-[#b21c0e]/20 transition-colors"
+                className="inline-flex items-center gap-2.5 border-2 border-brand-cta bg-transparent rounded-2xl px-6 py-3 text-base font-medium text-white hover:bg-brand-cta/20 transition-colors"
               >
                 <span>View Our Work</span>
               </Link>

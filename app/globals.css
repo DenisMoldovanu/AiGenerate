@@ -5,30 +5,50 @@
 @source "../lib/**/*.{js,ts,jsx,tsx}";
 
 @theme {
+  /* Brand colors */
   --color-brand-primary: #780000;
   --color-brand-primary-hover: #5c0000;
   --color-brand-dark: #410303;
+  --color-brand-gradient-mid: #650000;
   --color-brand-cta: #b21c0e;
   --color-brand-cta-hover: #961709;
+  /* Text & UI */
   --color-text-dark: #2b3437;
   --color-text-black: #000000;
   --color-locations-bg: #f9f3f3;
   --color-join-card-bg: #f7f4f4;
+  --color-solution-card-border: #f9f3f3;
+  /* Typography */
   --font-sans: "Manrope", sans-serif;
   --font-stack-notch: "Stack Sans Notch", sans-serif;
+  /* Border radius */
+  --radius-pill: 22px;
+  --radius-card: 20px;
+  --radius-card-lg: 24px;
+  --radius-accent: 3px;
+  /* Layout */
+  --container-max: 1472px;
+  /* Sizing */
+  --size-logo-height: 30px;
+  --size-icon-sm: 9px;
+  --size-icon-md: 18px;
+  --size-icon-lg: 24px;
+  --size-accent-bar: 92px;
+  --size-avatar: 36px;
+  --size-play-btn: 70px;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 1472px;
+  max-width: var(--container-max);
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .font-stack-notch {
-  font-family: "Stack Sans Notch", sans-serif;
+  font-family: var(--font-stack-notch);
 }
 
 @font-face {

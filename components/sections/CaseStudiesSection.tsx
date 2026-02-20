@@ -52,7 +52,7 @@ export function CaseStudiesSection() {
           </div>
           <Link
             href="#"
-            className="inline-flex items-center gap-2 rounded-[22px] bg-[#780000] px-5 py-2.5 text-base font-medium text-white hover:bg-[#5c0000] transition-colors shrink-0"
+            className="inline-flex items-center gap-2 rounded-pill bg-brand-primary px-5 py-2.5 text-base font-medium text-white hover:bg-brand-primary-hover transition-colors shrink-0"
           >
             <span>View All Projects</span>
             <Image
@@ -68,7 +68,7 @@ export function CaseStudiesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {caseStudies.map((item) => (
             <Link key={item.id} href="#" className="group block">
-              <div className="rounded-[20px] overflow-hidden border border-gray-100 hover:border-gray-200 transition-colors">
+              <div className="rounded-card overflow-hidden border border-gray-100 hover:border-gray-200 transition-colors">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={item.image}
@@ -88,7 +88,7 @@ export function CaseStudiesSection() {
                   </div>
                 </div>
                 <div className="p-6 bg-white">
-                  <h3 className="text-xl font-bold text-black mb-3 group-hover:text-[#780000] transition-colors">
+                  <h3 className="text-xl font-bold text-black mb-3 group-hover:text-brand-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-base font-normal text-gray-500 leading-6 line-clamp-3">

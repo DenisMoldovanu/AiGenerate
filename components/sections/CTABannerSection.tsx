@@ -12,7 +12,7 @@ export function CTABannerSection() {
           className="w-full h-full object-cover blur-sm scale-105"
         />
       </div>
-      <div className="absolute inset-0 bg-[#780000]/85" />
+      <div className="absolute inset-0 bg-brand-primary/85" />
       <div className="container relative py-16 lg:py-24 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
           Scale Your Business
@@ -23,7 +23,7 @@ export function CTABannerSection() {
         </p>
         <Link
           href="#"
-          className="inline-flex items-center gap-2 rounded-[22px] bg-[#b21c0e] px-6 py-3.5 text-base font-medium text-white hover:bg-[#961709] transition-colors"
+          className="inline-flex items-center gap-2 rounded-pill bg-brand-cta px-6 py-3.5 text-base font-medium text-white hover:bg-brand-cta-hover transition-colors"
         >
           <span>Book a Strategy Call</span>
           <Image

@@ -39,7 +39,7 @@ export function SectionHeader({
               />
             )}
             {tag && (
-              <span className="text-sm font-medium text-[#780000]">{tag}</span>
+              <span className="text-sm font-medium text-brand-primary">{tag}</span>
             )}
           </div>
         )}

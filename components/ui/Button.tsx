@@ -20,18 +20,18 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-[#780000] hover:bg-[#5c0000] text-white rounded-[22px] px-5 py-2.5 text-base font-medium transition-colors",
-  cta: "bg-[#b21c0e] hover:bg-[#961709] text-white rounded-3xl px-6 py-2.5 text-xl font-normal transition-colors",
+    "bg-brand-primary hover:bg-brand-primary-hover text-white rounded-pill px-5 py-2.5 text-base font-medium transition-colors",
+  cta: "bg-brand-cta hover:bg-brand-cta-hover text-white rounded-3xl px-6 py-2.5 text-xl font-normal transition-colors",
   secondary:
     "border border-white text-white hover:bg-white/10 rounded-3xl px-6 py-2.5 text-xl font-normal transition-colors",
   outline:
-    "border-2 border-[#780000] text-[#780000] hover:bg-[#780000] hover:text-white rounded-[22px] px-5 py-2.5 text-base font-medium transition-colors",
+    "border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white rounded-pill px-5 py-2.5 text-base font-medium transition-colors",
   ghost:
-    "rounded-[22px] border border-[#780000] text-[#780000] hover:bg-[#780000] hover:text-white px-4 py-2 text-sm font-medium transition-colors",
+    "rounded-pill border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white px-4 py-2 text-sm font-medium transition-colors",
   locations:
-    "bg-[#f9f3f3] hover:bg-[#f9f3f3]/80 text-black rounded-[22px] px-4 py-2 text-sm font-medium transition-colors",
+    "bg-locations-bg hover:bg-locations-bg/80 text-black rounded-pill px-4 py-2 text-sm font-medium transition-colors",
   white:
-    "bg-white hover:bg-white/90 text-[#780000] rounded-[22px] px-6 py-2.5 text-sm font-medium transition-colors",
+    "bg-white hover:bg-white/90 text-brand-primary rounded-pill px-6 py-2.5 text-sm font-medium transition-colors",
 };
 
 const sizes: Record<string, string> = {

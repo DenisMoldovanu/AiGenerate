@@ -64,11 +64,11 @@ const smallTestimonials: Array<{
 
 export function TestimonialsSection() {
   return (
-    <section className="w-full py-12 lg:py-20 bg-[#f9f3f3]">
+    <section className="w-full py-12 lg:py-20 bg-locations-bg">
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 lg:gap-6 mb-12">
           <div className="flex flex-col gap-2">
-            <span className="text-sm font-medium text-[#780000]">
+            <span className="text-sm font-medium text-brand-primary">
               &gt; Client Feedback
             </span>
             <h2 className="text-[32px] lg:text-[48px] font-extrabold leading-[1.17] text-black">
@@ -100,7 +100,7 @@ export function TestimonialsSection() {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-          <div className="flex-1 lg:flex-[1.2] rounded-[24px] bg-white p-6 lg:p-8 shadow-sm flex flex-col">
+          <div className="flex-1 lg:flex-[1.2] rounded-card-lg bg-white p-6 lg:p-8 shadow-sm flex flex-col">
             <div className="mb-6">
               <span className="block text-4xl lg:text-5xl font-extrabold text-black leading-none mb-1 font-stack-notch">
                 {featuredTestimonial.stat}
@@ -143,8 +143,8 @@ export function TestimonialsSection() {
             {smallTestimonials.map((t, i) => (
               <div
                 key={i}
-                className={`rounded-[24px] p-6 shadow-sm flex flex-col flex-1 ${
-                  t.variant === "primary" ? "bg-[#780000]" : "bg-white"
+                className={`rounded-card-lg p-6 shadow-sm flex flex-col flex-1 ${
+                  t.variant === "primary" ? "bg-brand-primary" : "bg-white"
                 }`}
               >
                 {t.stat && t.statLabel && (

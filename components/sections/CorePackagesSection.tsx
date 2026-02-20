@@ -52,17 +52,17 @@ function PackageCard({
 
   return (
     <div
-      className={`flex flex-col rounded-[20px] border border-[#F9F3F3] overflow-hidden ${
-        isPrimary ? "lg:-mt-4" : "bg-[#f9f3f3]/50"
+      className={`flex flex-col rounded-card border border-solution-card-border overflow-hidden ${
+        isPrimary ? "lg:-mt-4" : "bg-locations-bg/50"
       }`}
     >
       <div
         className={`flex flex-col items-center pt-8 pb-6 px-6 ${
-          isPrimary ? "bg-gradient-to-r from-[#780000] to-[#410303] relative" : ""
+          isPrimary ? "bg-gradient-to-r from-brand-primary to-brand-dark relative" : ""
         }`}
       >
         {badge && (
-          <span className="absolute top-4 right-4 rounded-full bg-[#780000] px-3 py-1 text-xs font-medium text-white">
+          <span className="absolute top-4 right-4 rounded-full bg-brand-primary px-3 py-1 text-xs font-medium text-white">
             {badge}
           </span>
         )}
@@ -82,10 +82,10 @@ function PackageCard({
         </h3>
         <Link
           href="#"
-          className={`inline-flex items-center justify-center rounded-[22px] px-6 py-2.5 text-sm font-medium transition-colors ${
+            className={`inline-flex items-center justify-center rounded-pill px-6 py-2.5 text-sm font-medium transition-colors ${
             ctaVariant === "primary"
-              ? "bg-[#780000] text-white hover:bg-[#5c0000]"
-              : "bg-white text-[#780000] hover:bg-white/90"
+              ? "bg-brand-primary text-white hover:bg-brand-primary-hover"
+              : "bg-white text-brand-primary hover:bg-white/90"
           }`}
         >
           {ctaText}
@@ -93,13 +93,13 @@ function PackageCard({
       </div>
       <div
         className={`flex flex-col border-t ${
-          isPrimary ? "bg-[#f9f3f3]/50 border-[#f9f3f3]" : "border-[#f9f3f3]"
+          isPrimary ? "bg-locations-bg/50 border-locations-bg" : "border-locations-bg"
         }`}
       >
         {packageFeatures.map((feature, i) => (
           <div
             key={i}
-            className="flex items-center justify-between px-4 py-3 border-b border-[#f9f3f3] last:border-b-0"
+            className="flex items-center justify-between px-4 py-3 border-b border-locations-bg last:border-b-0"
           >
             <div className="flex items-center gap-2.5">
               <Image
@@ -124,7 +124,7 @@ export function CorePackagesSection() {
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 lg:gap-6 mb-12">
           <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-8 lg:flex-1">
-            <span className="flex items-center gap-2 text-sm font-medium text-[#780000]">
+            <span className="flex items-center gap-2 text-sm font-medium text-brand-primary">
               <span>The What</span>
               <Image
                 src="/images/icons/chevron-right.svg"
@@ -140,7 +140,7 @@ export function CorePackagesSection() {
           </div>
           <Link
             href="#"
-            className="border-b border-black pb-1 text-base font-medium text-black hover:text-[#780000] transition-colors shrink-0"
+            className="border-b border-black pb-1 text-base font-medium text-black hover:text-brand-primary transition-colors shrink-0"
           >
             Growth Focused Solutions
           </Link>

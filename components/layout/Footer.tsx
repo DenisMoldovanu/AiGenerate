@@ -19,20 +19,20 @@ export function Footer() {
       <Container className="py-12 lg:py-16">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-12 mb-10">
           <div className="flex flex-col gap-4">
-            <p className="text-sm font-medium text-[#780000]">
+            <p className="text-sm font-medium text-brand-primary">
               Ready to talk? Reach out!
             </p>
             <a
               href="tel:+18778779673"
-              className="text-2xl lg:text-3xl font-bold text-black hover:text-[#780000] transition-colors"
+              className="text-2xl lg:text-3xl font-bold text-black hover:text-brand-primary transition-colors"
             >
               +1 877 877 9673
             </a>
             <div>
-              <p className="text-sm font-medium text-[#780000] mb-1">Email</p>
+              <p className="text-sm font-medium text-brand-primary mb-1">Email</p>
               <a
                 href="mailto:contact@wordwell.co"
-                className="text-base font-normal text-black hover:text-[#780000] transition-colors"
+                className="text-base font-normal text-black hover:text-brand-primary transition-colors"
               >
                 contact@wordwell.co
               </a>
@@ -40,7 +40,7 @@ export function Footer() {
             <div className="flex items-center gap-3 pt-2">
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-[#f9f3f3] flex items-center justify-center hover:bg-[#780000]/10 transition-colors"
+                className="w-10 h-10 rounded-full bg-locations-bg flex items-center justify-center hover:bg-brand-primary/10 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Image
@@ -53,7 +53,7 @@ export function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-[#f9f3f3] flex items-center justify-center hover:bg-[#780000]/10 transition-colors"
+                className="w-10 h-10 rounded-full bg-locations-bg flex items-center justify-center hover:bg-brand-primary/10 transition-colors"
                 aria-label="Facebook"
               >
                 <Image
@@ -66,7 +66,7 @@ export function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-[#f9f3f3] flex items-center justify-center hover:bg-[#780000]/10 transition-colors"
+                className="w-10 h-10 rounded-full bg-locations-bg flex items-center justify-center hover:bg-brand-primary/10 transition-colors"
                 aria-label="YouTube"
               >
                 <Image
@@ -86,7 +86,7 @@ export function Footer() {
                 <Link
                   key={item}
                   href="#"
-                  className="text-base font-normal text-black hover:text-[#780000] transition-colors"
+                  className="text-base font-normal text-black hover:text-brand-primary transition-colors"
                 >
                   {item}
                 </Link>
@@ -94,7 +94,7 @@ export function Footer() {
             </nav>
             <button
               type="button"
-              className="flex items-center gap-2 bg-[#f9f3f3] rounded-[22px] px-4 py-2.5 text-sm font-medium text-black hover:bg-[#f9f3f3]/80 transition-colors w-fit"
+              className="flex items-center gap-2 bg-locations-bg rounded-pill px-4 py-2.5 text-sm font-medium text-black hover:bg-locations-bg/80 transition-colors w-fit"
             >
               <Image
                 src="/images/icons/globe.svg"
@@ -133,21 +133,21 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <Link
               href="#"
-              className="text-sm font-normal text-gray-500 hover:text-[#780000] transition-colors"
+              className="text-sm font-normal text-gray-500 hover:text-brand-primary transition-colors"
             >
               Cookie Policy
             </Link>
             <span className="text-gray-400">|</span>
             <Link
               href="#"
-              className="text-sm font-normal text-gray-500 hover:text-[#780000] transition-colors"
+              className="text-sm font-normal text-gray-500 hover:text-brand-primary transition-colors"
             >
               Privacy Policy
             </Link>
             <span className="text-gray-400">|</span>
             <Link
               href="#"
-              className="text-sm font-normal text-gray-500 hover:text-[#780000] transition-colors"
+              className="text-sm font-normal text-gray-500 hover:text-brand-primary transition-colors"
             >
               Company Terms
             </Link>

@@ -22,7 +22,7 @@ export function Header() {
 
   return (
     <header className="relative w-full bg-white">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 h-1 w-[92px] bg-[#780000] rounded-b-[3px]" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 h-1 w-[var(--size-accent-bar)] rounded-b-[var(--radius-accent)] bg-brand-primary" />
 
       <div className="container">
         <nav className="flex items-center justify-between py-4">
@@ -49,7 +49,7 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-5">
             <button
               type="button"
-              className="flex items-center gap-[5px] bg-[#f9f3f3] rounded-[22px] px-4 py-2 hover:bg-[#f9f3f3]/80 transition-colors"
+              className="flex items-center gap-[5px] bg-locations-bg rounded-pill px-4 py-2 hover:bg-locations-bg/80 transition-colors"
             >
               <Image
                 src="/images/icons/globe.svg"
@@ -84,9 +84,9 @@ export function Header() {
             aria-expanded={mobileMenuOpen}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <span className="block w-6 h-0.5 bg-[#2b3437]" />
-            <span className="block w-6 h-0.5 bg-[#2b3437]" />
-            <span className="block w-6 h-0.5 bg-[#2b3437]" />
+            <span className="block w-6 h-0.5 bg-text-dark" />
+            <span className="block w-6 h-0.5 bg-text-dark" />
+            <span className="block w-6 h-0.5 bg-text-dark" />
           </button>
         </nav>
 

@@ -47,7 +47,7 @@ function TeamCard({
   image,
 }: (typeof teamMembers)[0]) {
   return (
-    <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col shrink-0 w-full min-w-0">
+    <div className="bg-white rounded-card p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col shrink-0 w-full min-w-0">
       <div className="flex gap-4">
         <div className="shrink-0">
           <Image
@@ -67,13 +67,13 @@ function TeamCard({
       <div className="flex flex-wrap gap-2 mt-6">
         <Link
           href="#"
-          className="inline-flex items-center justify-center rounded-[22px] border border-[#780000] px-4 py-2 text-sm font-medium text-[#780000] hover:bg-[#780000] hover:text-white transition-colors"
+          className="inline-flex items-center justify-center rounded-pill border border-brand-primary px-4 py-2 text-sm font-medium text-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
         >
           Learn More
         </Link>
         <Link
           href="#"
-          className="inline-flex items-center justify-center rounded-[22px] border border-[#780000] px-4 py-2 text-sm font-medium text-[#780000] hover:bg-[#780000] hover:text-white transition-colors"
+          className="inline-flex items-center justify-center rounded-pill border border-brand-primary px-4 py-2 text-sm font-medium text-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
         >
           Contact
         </Link>
@@ -119,7 +119,7 @@ export function OurTeamSection() {
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-8">
           <div>
-            <span className="text-sm font-medium text-[#780000]">
+            <span className="text-sm font-medium text-brand-primary">
               &gt; Professional Expertise
             </span>
             <h2 className="text-[32px] lg:text-[48px] font-extrabold leading-[1.17] text-black mt-2">
@@ -141,7 +141,7 @@ export function OurTeamSection() {
                 type="button"
                 onClick={scrollNext}
                 disabled={nextBtnDisabled}
-                className="w-10 h-10 rounded-full bg-[#780000] flex items-center justify-center text-white hover:bg-[#5c0000] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center text-white hover:bg-brand-primary-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 aria-label="Next"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -149,7 +149,7 @@ export function OurTeamSection() {
             </div>
             <Link
               href="#"
-              className="inline-flex items-center gap-2 rounded-[22px] bg-[#780000] px-5 py-2.5 text-base font-medium text-white hover:bg-[#5c0000] transition-colors"
+              className="inline-flex items-center gap-2 rounded-pill bg-brand-primary px-5 py-2.5 text-base font-medium text-white hover:bg-brand-primary-hover transition-colors"
             >
               <span>View All Members</span>
               <Image
@@ -165,7 +165,7 @@ export function OurTeamSection() {
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
           <div className="lg:w-[280px] shrink-0">
-            <div className="relative bg-gradient-to-r from-[#780000] to-[#410303] rounded-[24px] p-8 h-full min-h-[200px] flex flex-col justify-center overflow-hidden">
+            <div className="relative bg-gradient-to-r from-brand-primary to-brand-dark rounded-card-lg p-8 h-full min-h-[200px] flex flex-col justify-center overflow-hidden">
               <div className="absolute -right-4 -bottom-4 w-24 h-24 text-white/20">
                 <ChevronRight className="w-full h-full rotate-45 scale-150" />
               </div>

@@ -27,7 +27,7 @@ export function PartnersSection() {
           </div>
           <a
             href="#"
-            className="inline-flex items-center border-b border-[#780000] pb-[3px] text-sm font-bold leading-6 text-black hover:text-[#780000] transition-colors"
+            className="inline-flex items-center border-b border-brand-primary pb-[3px] text-sm font-bold leading-6 text-black hover:text-brand-primary transition-colors"
           >
             Grow With Us
           </a>

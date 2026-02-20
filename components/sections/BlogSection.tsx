@@ -31,7 +31,7 @@ export function BlogSection() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 lg:gap-6 mb-12">
           <div className="flex flex-col gap-2">
             <span className="text-sm font-medium text-black">
-              <span className="text-[#780000]">&gt;</span> Business Insights
+              <span className="text-brand-primary">&gt;</span> Business Insights
             </span>
             <h2 className="text-[32px] lg:text-[48px] font-extrabold leading-[1.17] text-black">
               Blog
@@ -39,7 +39,7 @@ export function BlogSection() {
           </div>
           <Link
             href="#"
-            className="inline-flex items-center gap-2 rounded-[22px] bg-[#780000] px-5 py-2.5 text-base font-medium text-white hover:bg-[#5c0000] transition-colors shrink-0"
+            className="inline-flex items-center gap-2 rounded-pill bg-brand-primary px-5 py-2.5 text-base font-medium text-white hover:bg-brand-primary-hover transition-colors shrink-0"
           >
             <span>View All Articles</span>
             <Image
@@ -54,7 +54,7 @@ export function BlogSection() {
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
           <Link href="#" className="lg:flex-[1] group block shrink-0">
-            <div className="rounded-[20px] overflow-hidden border border-gray-100 hover:border-gray-200 transition-colors h-full flex flex-col">
+            <div className="rounded-card overflow-hidden border border-gray-100 hover:border-gray-200 transition-colors h-full flex flex-col">
               <div className="relative aspect-[16/9] overflow-hidden">
                 <Image
                   src={featuredArticle.image}
@@ -65,13 +65,13 @@ export function BlogSection() {
                 />
               </div>
               <div className="p-6 lg:p-8 bg-white flex flex-col flex-1">
-                <h3 className="text-xl lg:text-2xl font-bold text-black mb-3 group-hover:text-[#780000] transition-colors">
+                <h3 className="text-xl lg:text-2xl font-bold text-black mb-3 group-hover:text-brand-primary transition-colors">
                   {featuredArticle.title}
                 </h3>
                 <p className="text-base font-normal text-gray-500 leading-6 mb-4">
                   {featuredArticle.excerpt}
                 </p>
-                <span className="inline-flex items-center gap-2 text-base font-medium text-[#780000] group-hover:underline mt-auto">
+                <span className="inline-flex items-center gap-2 text-base font-medium text-brand-primary group-hover:underline mt-auto">
                   Read Article
                   <Image
                     src="/images/icons/arrow-top-right.svg"
@@ -93,7 +93,7 @@ export function BlogSection() {
                   href="#"
                   className="group block flex-1 min-w-0"
                 >
-                  <div className="rounded-[20px] overflow-hidden border border-gray-100 hover:border-gray-200 transition-colors">
+                  <div className="rounded-card overflow-hidden border border-gray-100 hover:border-gray-200 transition-colors">
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <Image
                         src={article.image}
@@ -104,13 +104,13 @@ export function BlogSection() {
                       />
                     </div>
                     <div className="p-5 bg-white">
-                      <h3 className="text-lg font-bold text-black mb-2 group-hover:text-[#780000] transition-colors">
+                      <h3 className="text-lg font-bold text-black mb-2 group-hover:text-brand-primary transition-colors">
                         {article.title}
                       </h3>
                       <p className="text-sm font-normal text-gray-500 leading-5 mb-4">
                         {article.excerpt}
                       </p>
-                      <span className="inline-flex items-center gap-2 text-sm font-medium text-[#780000] group-hover:underline">
+                      <span className="inline-flex items-center gap-2 text-sm font-medium text-brand-primary group-hover:underline">
                         Read Article
                         <Image
                           src="/images/icons/arrow-top-right.svg"
@@ -130,7 +130,7 @@ export function BlogSection() {
               action="#"
               className="flex flex-col sm:flex-row rounded-full overflow-hidden border border-gray-200 bg-white shadow-sm shrink-0"
             >
-              <div className="flex items-center px-6 py-4 sm:py-0 sm:min-h-[56px] bg-[#f9f3f3] shrink-0">
+              <div className="flex items-center px-6 py-4 sm:py-0 sm:min-h-[56px] bg-locations-bg shrink-0">
                 <span className="text-base font-semibold text-black">
                   Get Growth Insights
                 </span>
@@ -142,7 +142,7 @@ export function BlogSection() {
               />
               <button
                 type="submit"
-                className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#780000] hover:bg-[#5c0000] transition-colors shrink-0"
+                className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-brand-primary hover:bg-brand-primary-hover transition-colors shrink-0"
               >
                 <Image
                   src="/images/icons/envelope-white.svg"

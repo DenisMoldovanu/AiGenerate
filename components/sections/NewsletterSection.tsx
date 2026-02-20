@@ -1,6 +1,6 @@
 export function NewsletterSection() {
   return (
-    <section className="w-full bg-[#780000] py-10 lg:py-12">
+    <section className="w-full bg-brand-primary py-10 lg:py-12">
       <div className="container">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight">
@@ -19,7 +19,7 @@ export function NewsletterSection() {
             </div>
             <button
               type="submit"
-              className="rounded-[22px] bg-white px-6 py-3 text-base font-medium text-[#780000] hover:bg-gray-100 transition-colors shrink-0"
+              className="rounded-pill bg-white px-6 py-3 text-base font-medium text-brand-primary hover:bg-gray-100 transition-colors shrink-0"
             >
               Submit Now
             </button>
