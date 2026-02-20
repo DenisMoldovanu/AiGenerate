@@ -78,7 +78,15 @@ export function OurSolutionsSection() {
   return (
     <section className="w-full py-12 lg:py-16 overflow-hidden">
       <Container className="relative">
-        <div className="hidden lg:block absolute left-0 top-[134px] w-[302px] h-[394px] overflow-hidden pointer-events-none z-0 opacity-20" />
+        <div className="hidden lg:block absolute left-0 top-[134px] w-[302px] h-[394px] overflow-visible pointer-events-none z-0">
+          <Image
+            src="/images/solutions/arrow-img.png"
+            alt=""
+            width={302}
+            height={394}
+            className="w-full h-auto object-contain object-left-top"
+          />
+        </div>
 
         <div className="flex items-center gap-[11px] mb-5 relative z-10">
           <Image
@@ -123,7 +131,7 @@ export function OurSolutionsSection() {
                 className="absolute w-[343px]"
                 style={{
                   left: `calc(${idx * 25}% + ${idx * 6}px)`,
-                  top: `${idx * 60}px`,
+                  top: `${(3 - idx) * 60}px`,
                 }}
               >
                 <SolutionCard {...card} />
