@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@source "../app/**/*.{js,ts,jsx,tsx}";
+@source "../components/**/*.{js,ts,jsx,tsx}";
+@source "../lib/**/*.{js,ts,jsx,tsx}";
+
+@theme {
+  --color-brand-primary: #780000;
+  --color-brand-primary-hover: #5c0000;
+  --color-brand-dark: #410303;
+  --color-brand-cta: #b21c0e;
+  --color-brand-cta-hover: #961709;
+  --color-text-dark: #2b3437;
+  --color-text-black: #000000;
+  --color-locations-bg: #f9f3f3;
+  --color-join-card-bg: #f7f4f4;
+  --font-sans: "Manrope", sans-serif;
+  --font-stack-notch: "Stack Sans Notch", sans-serif;
+}
+
+.font-stack-notch {
+  font-family: "Stack Sans Notch", sans-serif;
+}
+
+@font-face {
+  font-family: "Stack Sans Notch";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/stack-sans-notch@latest/latin-700-normal.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/stack-sans-notch@latest/latin-700-normal.woff)
+      format("woff");
+}
+
+@layer base {
+  body {
+    font-family: "Manrope", sans-serif;
+    @apply w-full max-w-[100vw] overflow-x-hidden;
+  }
+  html {
+    @apply w-full;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}

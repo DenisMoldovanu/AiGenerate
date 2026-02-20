@@ -8,9 +8,9 @@ pnpm-debug.log*
 # Build outputs
 dist/
 build/
+.next/
 *.tgz
 *.tar.gz
-public/
 
 # Environment variables
 .env
@@ -49,8 +49,6 @@ pids
 coverage/
 *.lcov
 
-# Vite
-.vite/
 
 # Local env files
 .env*.local
