@@ -78,16 +78,6 @@ export function OurSolutionsSection() {
   return (
     <section className="w-full py-12 lg:py-16 overflow-hidden">
       <Container className="relative">
-        <div className="hidden lg:block absolute left-0 top-[134px] w-[302px] h-[394px] overflow-visible pointer-events-none z-0">
-          <Image
-            src="/images/solutions/arrow-img.png"
-            alt=""
-            width={302}
-            height={394}
-            className="w-full h-auto object-contain object-left-top"
-          />
-        </div>
-
         <div className="flex items-center gap-[11px] mb-5 relative z-10">
           <Image
             src="/images/w-icon.svg"
@@ -102,9 +92,20 @@ export function OurSolutionsSection() {
         </div>
 
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-16 relative z-10">
-          <h2 className="text-[32px] lg:text-[48px] font-extrabold leading-[1.17] text-black shrink-0">
-            Our Solutions
-          </h2>
+          <div className="flex flex-col gap-16">
+            <h2 className="text-[32px] lg:text-[48px] font-extrabold leading-[1.17] text-black shrink-0">
+              Our Solutions
+            </h2>
+            <div className="hidden lg:block pointer-events-none">
+              <Image
+                src="/images/solutions/arrow-img.png"
+                alt=""
+                width={302}
+                height={394}
+                className="w-full h-auto object-cover object-left-top"
+              />
+            </div>
+          </div>
           <div className="max-w-[710px] flex flex-col gap-[26px]">
             <h3 className="text-xl lg:text-2xl font-extrabold leading-[1] text-black">
               Marketing Without Strategy Is Just Noise
@@ -123,7 +124,7 @@ export function OurSolutionsSection() {
           </div>
         </div>
 
-        <div className="relative mt-10 z-10">
+        <div className="relative mt-[-20%] z-10">
           <div className="hidden lg:block relative w-full min-h-[400px]">
             {solutionCards.map((card, idx) => (
               <div
