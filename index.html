@@ -87,6 +87,113 @@
       </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="relative w-full overflow-hidden bg-hero-gradient">
+      <!-- Right: Hero Image -->
+      <div class="w-full w-full h-full absolute">
+        <picture>
+          <img src="./src/images/homepage/hero-bg.png" alt="Business meeting" class="w-full h-full object-cover" />
+        </picture>
+      </div>
+
+      <div class="container relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16 py-12 lg:py-0">
+          <!-- Left: Social Icons (Desktop vertical bar) -->
+          <div class="hidden lg:flex flex-col items-center gap-6 py-8 shrink-0">
+            <a href="#" class="text-white/60 hover:text-white transition-colors" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="text-white/60 hover:text-white transition-colors" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 4.01C21 4.5 20.02 4.69 19 5C17.879 3.735 16.217 3.665 14.62 4.263C13.023 4.861 11.977 6.323 12 8.01V9.01C8.755 9.083 5.865 7.605 4 5.01C4 5.01 -0.182 12.94 8 17.01C5.942 18.397 3.886 19.338 2 19.01C5.059 20.723 8.29 21.272 11.1 20.509C14.302 19.637 16.948 17.312 18.279 13.843C18.6542 12.8311 18.8401 11.758 18.828 10.678C18.828 10.414 21.265 5.953 22 4.01Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="text-white/60 hover:text-white transition-colors" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Center: Hero Content -->
+          <div class="flex-1 flex flex-col gap-6 lg:gap-8 lg:py-16">
+            <!-- Tag -->
+            <div class="flex items-center">
+              <span class="inline-flex items-center gap-2.5 bg-white/15 rounded-xl px-2.5 py-[5px] text-xs font-normal text-white">
+                <!-- Red dot -->
+                <span class="w-6 h-6 rounded-[12px] bg-brand-cta flex items-center justify-center">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1H9V9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                Growth Focused Marketing
+              </span>
+            </div>
+
+            <!-- Heading -->
+            <div class="flex flex-col gap-0">
+              <div class="flex items-baseline gap-3 flex-wrap">
+                <span class="text-[40px] lg:text-[64px] font-bold text-white leading-none">Results</span>
+              </div>
+              <h1 class="text-[64px] lg:text-[113px] font-bold text-white leading-[0.85] tracking-[2.26px]">Beyond</h1>
+              <span class="text-[40px] lg:text-[66px] font-bold text-white leading-none">Words</span>
+            </div>
+
+            <!-- Clients badge -->
+            <div class="flex items-center gap-3">
+              <!-- Stacked avatars -->
+              <div class="flex -space-x-2">
+                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
+                  <img src="https://i.pravatar.cc/64?img=1" alt="" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
+                  <img src="https://i.pravatar.cc/64?img=2" alt="" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
+                  <img src="https://i.pravatar.cc/64?img=3" alt="" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-8 h-8 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
+                  <img src="https://i.pravatar.cc/64?img=4" alt="" class="w-full h-full object-cover" />
+                </div>
+              </div>
+              <span class="text-base font-medium text-white">24K +<br />Clients Worldwide</span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-base font-normal text-white leading-6 max-w-[480px]">We help ambitious brands scale through strategy, growth focused marketing, and creative execution that delivers measurable results.</p>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap items-center gap-6">
+              <!-- Start Button -->
+              <a href="#" class="inline-flex items-center gap-2.5 bg-brand-cta hover:bg-brand-cta-hover rounded-3xl px-6 py-2.5 text-xl font-normal text-white transition-colors">
+                <span>Start Your Growth Journey</span>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 14L14 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 1H14V14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <!-- View Our Work Button -->
+              <a href="#" class="inline-flex items-center gap-2.5 border border-white rounded-3xl px-6 py-2.5 text-xl font-normal text-white hover:bg-white/10 transition-colors">
+                <span>View Our Work</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

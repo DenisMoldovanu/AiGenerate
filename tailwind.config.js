@@ -9,9 +9,15 @@ export default {
       colors: {
         "brand-primary": "#780000",
         "brand-primary-hover": "#5C0000",
+        "brand-dark": "#410303",
+        "brand-cta": "#B21C0E",
+        "brand-cta-hover": "#961709",
         "text-dark": "#2B3437",
         "text-black": "#000000",
         "locations-bg": "#F9F3F3",
+      },
+      backgroundImage: {
+        "hero-gradient": "linear-gradient(to right, #780000, #410303)",
       },
       fontFamily: {
         sans: ["Manrope", "sans-serif"],
