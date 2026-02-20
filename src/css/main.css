@@ -1,53 +1,30 @@
-@import "tailwindcss";
-
-@theme {
-  --color-brand-primary: #780000;
-  --color-brand-primary-hover: #5C0000;
-  --color-text-dark: #2B3437;
-  --color-text-black: #000000;
-  --color-locations-bg: #F9F3F3;
-
-  --font-manrope: "Manrope", sans-serif;
-
-  --radius-pill: 22px;
-
-  --container-max-width-xl: 1472px;
-}
-
-@utility container {
-  margin-inline: auto;
-  padding-inline: 1rem;
-  max-width: var(--container-max-width-xl);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   body {
-    font-family: var(--font-manrope);
-    color: var(--color-text-dark);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Manrope', sans-serif;
+    @apply w-full max-w-[100vw] overflow-x-hidden;
+  }
+
+  html {
+    @apply w-full;
   }
 
   h1 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 1.25;
+    @apply text-hero-mobile md:text-hero-desktop font-bold text-text-dark;
   }
 
   h2 {
-    font-size: 1.875rem;
-    font-weight: 700;
-    line-height: 1.25;
+    @apply text-hero-mobile md:text-hero-desktop font-bold text-text-dark;
   }
 
   h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.375;
+    @apply text-2xl font-semibold text-text-dark leading-[1.2] tracking-[-0.02em];
   }
 
   p {
-    font-size: 1rem;
-    line-height: 1.625;
+    @apply text-subtitle-mobile md:text-subtitle-desktop font-normal text-text-dark;
   }
 }
