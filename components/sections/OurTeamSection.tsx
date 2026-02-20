@@ -48,8 +48,13 @@ function TeamCard({
 }: (typeof teamMembers)[0]) {
   return (
     <div className="bg-white rounded-card p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col shrink-0 w-full min-w-0">
-      <div className="flex gap-4">
-        <div className="shrink-0">
+      <div className="flex flex-col gap-4">
+        <div>
+          <h3 className="text-lg font-bold text-black">{name}</h3>
+          <p className="text-sm text-gray-600 mt-0.5">{role}</p>
+          <p className="text-xs text-gray-500 mt-1">{location}</p>
+        </div>
+        <div className="flex justify-center">
           <Image
             src={image}
             alt={name}
@@ -58,25 +63,20 @@ function TeamCard({
             className="w-24 h-24 rounded-[16px] object-cover"
           />
         </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-bold text-black">{name}</h3>
-          <p className="text-sm text-gray-500 mt-0.5">{role}</p>
-          <p className="text-xs text-gray-400 mt-1">{location}</p>
+        <div className="flex flex-wrap gap-2">
+          <Link
+            href="#"
+            className="inline-flex items-center justify-center rounded-pill border-2 border-brand-primary bg-white px-4 py-2 text-sm font-medium text-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
+          >
+            Learn More
+          </Link>
+          <Link
+            href="#"
+            className="inline-flex items-center justify-center rounded-pill bg-brand-primary px-4 py-2 text-sm font-medium text-white hover:bg-brand-primary-hover transition-colors"
+          >
+            Contact
+          </Link>
         </div>
-      </div>
-      <div className="flex flex-wrap gap-2 mt-6">
-        <Link
-          href="#"
-          className="inline-flex items-center justify-center rounded-pill border border-brand-primary px-4 py-2 text-sm font-medium text-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
-        >
-          Learn More
-        </Link>
-        <Link
-          href="#"
-          className="inline-flex items-center justify-center rounded-pill border border-brand-primary px-4 py-2 text-sm font-medium text-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
-        >
-          Contact
-        </Link>
       </div>
     </div>
   );
@@ -115,7 +115,7 @@ export function OurTeamSection() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="w-full py-12 lg:py-20 bg-[#FAFAFA]">
+    <section className="w-full py-12 lg:py-20 bg-locations-bg">
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-8">
           <div>
@@ -132,7 +132,7 @@ export function OurTeamSection() {
                 type="button"
                 onClick={scrollPrev}
                 disabled={prevBtnDisabled}
-                className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 aria-label="Previous"
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -141,7 +141,7 @@ export function OurTeamSection() {
                 type="button"
                 onClick={scrollNext}
                 disabled={nextBtnDisabled}
-                className="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center text-white hover:bg-brand-primary-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 aria-label="Next"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -165,8 +165,8 @@ export function OurTeamSection() {
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
           <div className="lg:w-[280px] shrink-0">
-            <div className="relative bg-gradient-to-r from-brand-primary to-brand-dark rounded-card-lg p-8 h-full min-h-[200px] flex flex-col justify-center overflow-hidden">
-              <div className="absolute -right-4 -bottom-4 w-24 h-24 text-white/20">
+            <div className="relative bg-brand-primary rounded-card-lg p-8 h-full min-h-[200px] flex flex-col justify-center overflow-hidden">
+              <div className="absolute -right-4 -bottom-4 w-24 h-24 text-brand-dark/30">
                 <ChevronRight className="w-full h-full rotate-45 scale-150" />
               </div>
               <span className="text-[56px] lg:text-[64px] font-extrabold leading-none text-white">
