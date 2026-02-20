@@ -194,6 +194,36 @@
       </div>
     </section>
 
+    <!-- Image Strip Section -->
+    <section class="w-full">
+      <div class="flex flex-col md:flex-row gap-1.5">
+        <!-- Left Panel -->
+        <div class="w-full md:w-[24.6%] shrink-0">
+          <picture>
+            <img src="./src/images/homepage/panel-left.png" alt="Business meeting" class="w-full h-[260px] md:h-[412px] object-cover" />
+          </picture>
+        </div>
+        <!-- Center Panel (Video) -->
+        <div class="relative w-full md:flex-1 group cursor-pointer">
+          <picture>
+            <img src="./src/images/homepage/panel-center.png" alt="Team collaboration" class="w-full h-[260px] md:h-[412px] object-cover" />
+          </picture>
+          <!-- Play Button -->
+          <button type="button" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70px] h-[70px] rounded-full bg-white/50 backdrop-blur-[10px] flex items-center justify-center hover:bg-white/70 transition-colors" aria-label="Play video">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5.14V19.14L19 12.14L8 5.14Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <!-- Right Panel -->
+        <div class="w-full md:w-[24.6%] shrink-0">
+          <picture>
+            <img src="./src/images/homepage/panel-right.png" alt="Working together" class="w-full h-[260px] md:h-[412px] object-cover" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
