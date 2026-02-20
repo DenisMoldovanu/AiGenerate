@@ -15,6 +15,7 @@ export default {
         "text-dark": "#2B3437",
         "text-black": "#000000",
         "locations-bg": "#F9F3F3",
+        "join-card-bg": "#F7F4F4",
       },
       backgroundImage: {
         "hero-gradient": "linear-gradient(to right, #780000, #410303)",
