@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', function () {
   const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
@@ -30,6 +30,23 @@ document.addEventListener('DOMContentLoaded', function () {
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
+    },
+    allowTouchMove: true,
+    grabCursor: true,
+  });
+
+  new Swiper('.team-swiper', {
+    modules: [Navigation],
+    slidesPerView: 1,
+    spaceBetween: 24,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1280: { slidesPerView: 4 },
+    },
+    navigation: {
+      nextEl: '.team-swiper-next',
+      prevEl: '.team-swiper-prev',
     },
     allowTouchMove: true,
     grabCursor: true,
