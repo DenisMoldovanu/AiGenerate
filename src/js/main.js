@@ -1,6 +1,7 @@
-// Main JavaScript file for Wordwell site
+import Swiper from 'swiper';
+import { Autoplay } from 'swiper/modules';
+
 document.addEventListener('DOMContentLoaded', function () {
-  // Mobile menu toggle functionality
   const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   const body = document.body;
@@ -19,4 +20,18 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  new Swiper('.partners-swiper', {
+    modules: [Autoplay],
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    loop: true,
+    speed: 4000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    allowTouchMove: true,
+    grabCursor: true,
+  });
 });

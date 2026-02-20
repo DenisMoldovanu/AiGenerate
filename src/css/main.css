@@ -1,3 +1,5 @@
+@import 'swiper/css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,5 +28,11 @@
 
   p {
     @apply text-subtitle-mobile md:text-subtitle-desktop font-normal text-text-dark;
+  }
+}
+
+@layer components {
+  .partners-swiper .swiper-wrapper {
+    transition-timing-function: linear;
   }
 }
