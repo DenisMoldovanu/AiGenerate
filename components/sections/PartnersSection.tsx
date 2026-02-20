@@ -3,7 +3,10 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 
-const partnerCount = 10;
+const partnerLogos = Array.from({ length: 10 }, (_, i) => ({
+  src: `/images/partners/partner-${i + 1}.png`,
+  alt: `Partner ${i + 1}`,
+}));
 
 export function PartnersSection() {
   return (
@@ -35,14 +38,18 @@ export function PartnersSection() {
 
       <div className="w-full mt-10 overflow-hidden">
         <div className="flex animate-marquee w-max">
-          {[...Array(partnerCount * 2)].map((_, i) => (
+          {[...partnerLogos, ...partnerLogos].map((logo, i) => (
             <div
               key={i}
               className="flex items-center justify-center px-6 lg:px-10 shrink-0"
             >
-              <div className="h-[42px] min-w-[120px] grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-gray-100 rounded text-xs text-gray-400">
-                Partner {(i % partnerCount) + 1}
-              </div>
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={120}
+                height={42}
+                className="h-[42px] w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              />
             </div>
           ))}
         </div>
